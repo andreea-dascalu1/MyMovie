@@ -1,0 +1,18 @@
+<div class="nav">
+    <button mat-button (click)="goToMovies()">Movies</button>
+    <button mat-button (click)="goToAccount()">Account</button>
+    <button mat-button (click)="goToLogIn()">Log out</button>
+</div>
+
+<ul>
+    <li *ngFor="let movie of movies" >
+      -- id: {{movie.id}}
+      -- title: {{movie.title}}
+      -- director: {{movie.director}}
+      -- year:{{movie.year}}
+      -- duration:{{movie.duration}}
+      -- rating:{{movie.rating}}
+      -- user id: {{movie.user_id}}
+    </li>
+  </ul> 
+
