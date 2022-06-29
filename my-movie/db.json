@@ -1,58 +1,224 @@
-
+{
+  "users": [
     {
-        "users":[
-            {
-                "id":1,
-                "email": "michael.lawson@gmail.ro",
-                "first_name": "Michael",
-                "last_name": "Lawson",
-                "password":"@Ml123"
-            },
-            {
-                "id":2,
-                "email": "emma.watson@gmail.ro",
-                "first_name": "Emma",
-                "last_name": "Watson",
-                "password":"Iloveharry!<3"
-            },
-            {
-                "id":3,
-                "email": "billie.eilish@gmail.ro",
-                "first_name": "Billie",
-                "last_name": "Eilish",
-                "password":"351?Be"
-            }
-
-        ],
-
-        "movies":[
-            {
-                "id":1,
-                "title":"Titanic",
-                "director":"James Cameron",
-                "year":1997,
-                "duration":"3h 14m",
-                "rating":7.9,
-                "user_id":1
-            },
-            {
-                "id":2,
-                "title":"Avengers Endgame",
-                "director":"Anthony Russo",
-                "year":2019,
-                "duration":"3h 1m",
-                "rating":8.4,
-                "user_id":3
-            },
-            {
-                "id":3,
-                "title":"Harry Potter and the Sorcerer's Stone",
-                "director":"Chris Columbus",
-                "year":2001,
-                "duration":"2h 32m",
-                "rating":7.6,
-                "user_id":2
-            }
-
-        ]
+      "id": 1,
+      "email": "michael.lawson@gmail.ro",
+      "first_name": "Michael",
+      "last_name": "Lawson",
+      "password": "@Ml123"
+    },
+    {
+      "id": 2,
+      "email": "emma.watson@gmail.ro",
+      "first_name": "Emma",
+      "last_name": "Watson",
+      "password": "Iloveharry!<3"
+    },
+    {
+      "id": 3,
+      "email": "billie.eilish@gmail.ro",
+      "first_name": "Billie",
+      "last_name": "Eilish",
+      "password": "351?Be"
+    },
+    {
+      "email": "eve.holt@reqres.in",
+      "password": "pistol",
+      "id": 4
+    },
+    {
+      "email": "eve.holt@reqres.in",
+      "password": "pistol",
+      "id": 5
+    },
+    {
+      "email": "eve.holt@reqres.in",
+      "password": "pistol",
+      "id": 6
+    },
+    {
+      "email": "eve.holt@reqres.in",
+      "password": "pistol",
+      "id": 7
+    },
+    {
+      "email": "eve.holt@reqres.in",
+      "password": "pistol",
+      "id": 8
+    },
+    {
+      "email": "eve.holt@reqres.in",
+      "password": "pistol",
+      "id": 9
+    },
+    {
+      "email": "eve.holt@reqres.in",
+      "password": "pistol",
+      "id": 10
+    },
+    {
+      "email": "eve.holt@reqres.in",
+      "password": "pistol",
+      "id": 11
+    },
+    {
+      "email": "eve.holt@reqres.in",
+      "password": "pistol",
+      "id": 12
+    },
+    {
+      "email": "eve.holt@reqres.in",
+      "password": "cityslicka",
+      "id": 13
+    },
+    {
+      "email": "eve.holt@reqres.in",
+      "password": "cityslicka",
+      "id": 14
+    },
+    {
+      "email": "eve.holt@reqres.in",
+      "password": "cityslicka",
+      "id": 15
+    },
+    {
+      "email": "eve.holt@reqres.in",
+      "password": "cityslicka",
+      "id": 16
+    },
+    {
+      "email": "eve.holt@reqres.in",
+      "password": "cityslicka",
+      "id": 17
+    },
+    {
+      "email": "eve.holt@reqres.in",
+      "password": "cityslicka",
+      "id": 18
+    },
+    {
+      "email": "eve.holt@reqres.in",
+      "password": "cityslicka",
+      "id": 19
+    },
+    {
+      "email": "eve.holt@reqres.in",
+      "password": "cityslicka",
+      "id": 20
+    },
+    {
+      "email": "eve.holt@reqres.in",
+      "password": "cityslicka",
+      "id": 21
+    },
+    {
+      "email": "eve.holt@reqres.in",
+      "password": "cityslicka",
+      "id": 22
+    },
+    {
+      "email": "eve.holt@reqres.in",
+      "password": "cityslicka",
+      "id": 23
+    },
+    {
+      "email": "eve.holt@reqres.in",
+      "password": "cityslicka",
+      "id": 24
+    },
+    {
+      "email": "eve.holt@reqres.in",
+      "password": "cityslicka",
+      "id": 25
+    },
+    {
+      "email": "eve.holt@reqres.in",
+      "password": "cityslicka",
+      "id": 26
+    },
+    {
+      "email": "eve.holt@reqres.in",
+      "password": "cityslicka",
+      "id": 27
+    },
+    {
+      "email": "eve.holt@reqres.in",
+      "password": "cityslicka",
+      "id": 28
+    },
+    {
+      "email": "eve.holt@reqres.in",
+      "password": "cityslicka",
+      "id": 29
+    },
+    {
+      "email": "eve.holt@reqres.in",
+      "password": "cityslicka",
+      "id": 30
+    },
+    {
+      "email": "eve.holt@reqres.in",
+      "password": "cityslicka",
+      "id": 31
+    },
+    {
+      "email": "eve.holt@reqres.in",
+      "password": "cityslicka",
+      "id": 32
+    },
+    {
+      "email": "eve.holt@reqres.in",
+      "password": "cityslicka",
+      "id": 33
+    },
+    {
+      "email": "eve.holt@reqres.in",
+      "password": "cityslicka",
+      "id": 34
+    },
+    {
+      "email": "eve.holt@reqres.in",
+      "password": "cityslicka",
+      "id": 35
+    },
+    {
+      "email": "eve.holt@reqres.in",
+      "password": "cityslicka",
+      "id": 36
+    },
+    {
+      "email": "eve.holt@reqres.in",
+      "password": "cityslicka",
+      "id": 37
     }
+  ],
+  "movies": [
+    {
+      "id": 1,
+      "title": "Titanic",
+      "director": "James Cameron",
+      "year": 1997,
+      "duration": "3h 14m",
+      "rating": 7.9,
+      "user_id": 1
+    },
+    {
+      "id": 2,
+      "title": "Avengers Endgame",
+      "director": "Anthony Russo",
+      "year": 2019,
+      "duration": "3h 1m",
+      "rating": 8.4,
+      "user_id": 3
+    },
+    {
+      "id": 3,
+      "title": "Harry Potter and the Sorcerer's Stone",
+      "director": "Chris Columbus",
+      "year": 2001,
+      "duration": "2h 32m",
+      "rating": 7.6,
+      "user_id": 2
+    }
+  ]
+}
