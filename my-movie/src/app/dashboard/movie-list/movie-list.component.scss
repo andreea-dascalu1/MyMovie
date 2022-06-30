@@ -1,21 +1,29 @@
 /* AppComponent's private CSS styles */
-.nav{
-  border-radius: 10px;
-  background-color: black;
-}
 
 .button {
-  //background-color: rgb(192, 121, 235);
-  //border-radius: 10px;
-  margin: 10 px;
-  //box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
-
+  margin: 5 rem;
   }
-
   .dashboard{
-  background-color:rgb(106, 84, 84);
-  width: 35vw;
-  padding: 4rem 2rem;
+  background-color:rgb(255, 255, 255);
+  width: 55vw;
+  padding: 2rem;
   border-radius: 10px;
   //margin-top: -10rem;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);}
+
+  .field {
+    margin: 10 px 20px;}
+
+    table {
+      border-collapse: separate;
+      border-spacing: 50px 0;
+    }
+    
+    td {
+      //padding: 10px 0;
+      text-align: left;
+    }
+    th{
+      text-align: center;
+
+    }

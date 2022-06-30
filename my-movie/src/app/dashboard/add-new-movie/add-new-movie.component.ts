@@ -24,7 +24,7 @@ export class AddNewMovieComponent implements OnInit {
       title: new FormControl('', Validators.required),
       director: new FormControl('', [CustomValidators.humanName,Validators.required]),
       year:new FormControl('', [CustomValidators.year,Validators.required]),
-      duration:new FormControl('', Validators.required),
+      duration:new FormControl('', [/*CustomValidators.duration,*/Validators.required]),
       rating:new FormControl('', [CustomValidators.rating,Validators.required]),
     }
     );}

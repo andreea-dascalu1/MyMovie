@@ -11,10 +11,12 @@ import { Router } from '@angular/router';
 })
 export class LoginComponent implements OnInit {
   logInForm!: FormGroup;
+  rememberMe: boolean=false;
 
   constructor(private router:Router, private _snackBar:MatSnackBar, private http:HttpClient) { }
 
   ngOnInit(): void {
+    this.rememberMe = false;
     this.initializeForm();
   }
 
@@ -31,15 +33,19 @@ export class LoginComponent implements OnInit {
       email: "eve.holt@reqres.in",
       password: "cityslicka"
     }
-    this.http.post("http://localhost:3000/users", body).subscribe(
+    this.http.post("https://reqres.in/api/login", body).subscribe(
       (res: any) => {
-
         console.log(res)
         this.router.navigateByUrl('/dashboard');
         this._snackBar.open('Log In Successfully!', '', {
           duration: 2000,
         });
-        window.localStorage.setItem("token",res.token)
+        localStorage.setItem('email', res['email']);
+        localStorage.setItem('password', res['password']);
+        window.localStorage.setItem("token",res.token);
+        if(this.rememberMe) {
+          localStorage.setItem('rememberMe', 'yes')
+        }
 
       }, (error) => {
         console.error(error)
@@ -47,11 +53,17 @@ export class LoginComponent implements OnInit {
           duration: 2000,
         });
       }
-
-
     )
 
-
+  }
+  autoComplete(){
+    const accessTokenObj = localStorage.getItem("token");
+    // Retrieve rememberMe value from local storage
+    const rememberMe = localStorage.getItem('rememberMe');
+console.log(accessTokenObj);
+    if (accessTokenObj && rememberMe == 'yes') {
+      //this.logInForm.get(email)=localStorage.getItem('email');
+    }
   }
 
   get email() {

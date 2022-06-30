@@ -5,7 +5,7 @@
   
     <form [formGroup]="registerForm" (ngSubmit)="register()">
      
-      <mat-form-field appearance="fill">
+      <mat-form-field color="accent" appearance="outline">
         <mat-label>First name</mat-label>
         <input
         matInput
@@ -17,7 +17,7 @@
       />
       </mat-form-field>
 
-      <mat-form-field appearance="fill">
+      <mat-form-field color="accent" appearance="outline">
         <mat-label>Last name</mat-label>
         <input
         matInput
@@ -29,7 +29,7 @@
       />
       </mat-form-field>
 
-      <mat-form-field appearance="fill">
+      <mat-form-field color="accent" appearance="outline">
         <mat-label>Email</mat-label>
         <input
         matInput
@@ -41,7 +41,7 @@
       />
       </mat-form-field>
   
-      <mat-form-field appearance="fill">
+      <mat-form-field color="accent" appearance="outline">
         <mat-label>Password</mat-label>
         <input
         matInput
@@ -52,22 +52,23 @@
         type="password"
         autocomplete="on"
       />
+      <mat-error  *ngIf="password?.hasError('invalid-password')"> The password has to be at least 8 characters long and contain a number, a lowercase, uppercase and special symbol.</mat-error>
       </mat-form-field>
 
-      <mat-form-field appearance="fill">
+      <mat-form-field color="accent" appearance="outline">
         <mat-label>Confirm password</mat-label>
         <input
         matInput
-        formControlName="password"
+        formControlName="cpassword"
         placeholder="Confirm password"
         required
-        name="password"
+        name="cpassword"
         autocomplete="on"
         type="password"
       />
       </mat-form-field>
   
       <a [routerLink]="'/auth/login'">Already have an account? Login!</a>
-      <button mat-raised-button color="primary" type="submit">REGISTER</button>
+      <button mat-raised-button color="accent" type="submit">REGISTER</button>
     </form> 
   </div>

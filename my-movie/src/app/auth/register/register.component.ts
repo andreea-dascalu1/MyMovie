@@ -3,6 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { Router } from '@angular/router';
+import { CustomValidators } from 'src/app/dashboard/custom-validators';
 
 @Component({
   selector: 'app-register',
@@ -23,8 +24,8 @@ export class RegisterComponent implements OnInit {
       fname: new FormControl(null, Validators.required),
       lname: new FormControl(null, Validators.required),
       email: new FormControl(null, Validators.required),
-      password: new FormControl(null, Validators.required),
-      confirmPassword: new FormControl(null, Validators.required),
+      password: new FormControl(null, [Validators.required,CustomValidators.password]),
+      cpassword: new FormControl(null,[Validators.required,/*CustomValidators.passwordsMatch('password')*/]),
     });
   }
 
@@ -58,6 +59,18 @@ export class RegisterComponent implements OnInit {
 
   get password() {
     return this.registerForm.get('password');
+  }
+
+  get fname() {
+    return this.registerForm.get('fname');
+  }
+
+  get lname() {
+    return this.registerForm.get('lname');
+  }
+
+  get cpassword() {
+    return this.registerForm.get('cpassword');
   }
 
 }
